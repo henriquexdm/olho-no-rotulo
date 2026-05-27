@@ -8,7 +8,7 @@ function App() {
 
   const tratarCriacaoPerfil = async (dadosPerfil) => {
     try {
-      const resposta = await axios.post('http://localhost/aaaaaaaaaaaaaaaaaaaa/usuarios.php', dadosPerfil);
+      const resposta = await axios.post('https://olhonorotulo.infinityfreeapp.com/api/usuarios.php', dadosPerfil);
       
       setUsuario(resposta.data); 
     } catch (error) {
