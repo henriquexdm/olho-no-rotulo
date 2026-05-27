@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/olho-no-rotulo/static/css/main.c9986bb7.css",
-    "main.js": "/olho-no-rotulo/static/js/main.85c6eb65.js",
+    "main.js": "/olho-no-rotulo/static/js/main.e308522b.js",
     "index.html": "/olho-no-rotulo/index.html",
     "main.c9986bb7.css.map": "/olho-no-rotulo/static/css/main.c9986bb7.css.map",
-    "main.85c6eb65.js.map": "/olho-no-rotulo/static/js/main.85c6eb65.js.map"
+    "main.e308522b.js.map": "/olho-no-rotulo/static/js/main.e308522b.js.map"
   },
   "entrypoints": [
     "static/css/main.c9986bb7.css",
-    "static/js/main.85c6eb65.js"
+    "static/js/main.e308522b.js"
   ]
 }
