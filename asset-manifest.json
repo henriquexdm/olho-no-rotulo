@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/olho-no-rotulo/static/css/main.c9986bb7.css",
+    "main.js": "/olho-no-rotulo/static/js/main.9138c031.js",
+    "index.html": "/olho-no-rotulo/index.html",
+    "main.c9986bb7.css.map": "/olho-no-rotulo/static/css/main.c9986bb7.css.map",
+    "main.9138c031.js.map": "/olho-no-rotulo/static/js/main.9138c031.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9986bb7.css",
+    "static/js/main.9138c031.js"
+  ]
+}
