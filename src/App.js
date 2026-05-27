@@ -8,12 +8,12 @@ function App() {
 
   const tratarCriacaoPerfil = async (dadosPerfil) => {
     try {
-      const resposta = await axios.post('https://olhonorotulo.infinityfreeapp.com/api/usuarios.php', dadosPerfil);
+      const resposta = await axios.post('http://olhonorotulo.infinityfreeapp.com/api/usuarios.php', dadosPerfil);
       
       setUsuario(resposta.data); 
     } catch (error) {
       console.error("Erro ao salvar perfil no banco:", error);
-      alert("Não foi possível salvar o perfil. O servidor Java está rodando?");
+      alert("Não foi possível salvar o perfil. O servidor InfinityFree está online?");
     }
   };
 

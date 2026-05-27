@@ -13,13 +13,13 @@ function Busca({ usuarioId, nomeUsuario }) {
 
     setCarregando(true);
     try {
-      const resposta = await axios.get('https://olhonorotulo.infinityfreeapp.com/api/produtos.php', {
+      const resposta = await axios.get('http://olhonorotulo.infinityfreeapp.com/api/produtos.php', {
         params: { termo: termo, usuarioId: usuarioId }
       });
       setProdutos(resposta.data);
     } catch (error) {
       console.error("Erro na busca:", error);
-      alert("Erro ao conectar com o servidor Java.");
+      alert("Erro ao conectar com o servidor PHP do InfinityFree.");
     } finally {
       setCarregando(false);
     }
