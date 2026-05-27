@@ -13,7 +13,7 @@ function Busca({ usuarioId, nomeUsuario }) {
 
     setCarregando(true);
     try {
-      const resposta = await axios.get('http://localhost/aaaaaaaaaaaaaaaaaaaa/produtos.php', {
+      const resposta = await axios.get('https://olhonorotulo.infinityfreeapp.com/api/produtos.php', {
         params: { termo: termo, usuarioId: usuarioId }
       });
       setProdutos(resposta.data);
