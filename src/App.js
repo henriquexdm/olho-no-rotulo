@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import axios from 'axios';
+import Perfil from './components/Perfil';
+import Busca from './components/Busca';
 
 function App() {
+  const [usuario, setUsuario] = useState(null);
+
+  const tratarCriacaoPerfil = async (dadosPerfil) => {
+    try {
+      const resposta = await axios.post('http://localhost/aaaaaaaaaaaaaaaaaaaa/usuarios.php', dadosPerfil);
+      
+      setUsuario(resposta.data); 
+    } catch (error) {
+      console.error("Erro ao salvar perfil no banco:", error);
+      alert("Não foi possível salvar o perfil. O servidor Java está rodando?");
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {!usuario ? (
+        <Perfil aoSalvarPerfil={tratarCriacaoPerfil} />
+      ) : (
+        <Busca usuarioId={usuario.id} nomeUsuario={usuario.nome} />
+      )}
     </div>
   );
 }
